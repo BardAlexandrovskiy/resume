@@ -24,7 +24,6 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .active {
-    opacity: 0.5;
-    background-color: #5ED2B8;
+    background-color: rgba(94, 210, 184, 0.5);
   }
 `;
