@@ -3,14 +3,33 @@ import styled from "styled-components";
 export const FooterContainer = styled.footer`
   height: 140px;
   background-color: #006b53;
-  display: flex;
   padding: 0 100px;
-  align-items: center;
+  display: flex;
+  justify-content: center;
 `;
 
-export const FooterItem = styled.div``;
-export const Img = styled.div`
-  width: 20px;
-  height: 20px;
+export const ItemsContainer = styled.div`
+  height: 140px;
+  display: flex;
 `;
-export const Text = styled.p``;
+
+export const Item = styled.div`
+  display: flex;
+  align-items: center;
+  margin-right: 70px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+`;
+
+export const Img = styled.div`
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+`;
+
+export const Text = styled.p`
+  color: white;
+  font-size: 16px;
+`;
