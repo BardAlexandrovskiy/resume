@@ -24,6 +24,10 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .active {
-    background-color: rgba(94, 210, 184, 0.5);
+    background-color: #66c9b4;
+  }
+
+  button, a {
+    cursor: pointer;
   }
 `;
