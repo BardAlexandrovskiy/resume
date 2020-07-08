@@ -6,11 +6,19 @@ export const FooterContainer = styled.footer`
   padding: 0 100px;
   display: flex;
   justify-content: center;
+
+  @media (max-width: 1024px) {
+    padding: 10px 20px;
+  }
 `;
 
 export const ItemsContainer = styled.div`
-  height: 140px;
   display: flex;
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 
 export const Item = styled.div`
@@ -21,12 +29,26 @@ export const Item = styled.div`
   &:last-child {
     margin-right: 0;
   }
+
+  @media (max-width: 1024px) {
+    margin-right: 0;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 `;
 
 export const Img = styled.div`
   width: 40px;
   height: 40px;
   margin-right: 20px;
+
+  @media (max-width: 1024px) {
+    width: 30px;
+    height: 30px;
+  }
 `;
 
 export const Text = styled.p`

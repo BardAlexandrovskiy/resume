@@ -2,11 +2,12 @@ import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
 export const HeaderContainer = styled.footer`
-  min-height: 164px;
+  min-height: 165px;
   background-color: #1f7b67;
   display: flex;
   padding: 0 100px;
   align-items: center;
+  justify-content: space-around;
 
   @media (max-width: 1024px) {
     flex-direction: column;
