@@ -1,9 +1,9 @@
-import styled from "styled-components";
-import { NavLink } from "react-router-dom";
+import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 export const HeaderContainer = styled.footer`
   height: 140px;
-  background-color: #1f7b67;
+  background-color: #2f496e;
   display: flex;
   padding: 0 100px;
   align-items: center;
@@ -15,6 +15,10 @@ export const HeaderContainer = styled.footer`
     height: 100px;
     justify-content: space-between;
     position: relative;
+  }
+
+  @media (max-width: 360px) {
+    padding: 10px;
   }
 `;
 
@@ -42,7 +46,7 @@ export const Title = styled.h1`
 `;
 
 export const Subtitle = styled.h2`
-  color: whitesmoke;
+  color: #f2f3f4;
   font-size: 25px;
 
   @media (max-width: 414px) {
@@ -60,7 +64,7 @@ export const BurgerLinks = styled.button`
   display: none;
   fill: white;
   padding: 13px;
-  background-color: #3fb39a;
+  background-color: #2988bc;
   border-radius: 3px;
 
   @media (max-width: 1024px) {
@@ -71,15 +75,16 @@ export const BurgerLinks = styled.button`
 export const LinkPanel = styled.nav`
   width: 50%;
   display: flex;
+  z-index: 50;
 
   @media (max-width: 1024px) {
     width: 40%;
     flex-direction: column;
     justify-content: flex-end;
-    top: 80px;
+    top: 77px;
     right: 20px;
     position: absolute;
-    display: ${(props) => (props.burgerOpen ? "block" : "none")};
+    display: ${(props) => (props.burgerOpen ? 'block' : 'none')};
   }
 `;
 
@@ -88,7 +93,6 @@ export const Link = styled(NavLink)`
   border-radius: 10px;
   color: white;
   width: 25%;
-  text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,7 +102,7 @@ export const Link = styled(NavLink)`
   @media (max-width: 1024px) {
     margin-bottom: 2px;
     width: 100%;
-    background-color: #3fb39a;
+    background-color: #2988bc;
   }
 
   @media (max-width: 736px) {

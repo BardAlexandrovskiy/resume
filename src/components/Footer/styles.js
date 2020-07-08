@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const FooterContainer = styled.footer`
   height: 140px;
-  background-color: #006b53;
+  background-color: #2988bc;
   padding: 0 100px;
   display: flex;
   justify-content: center;

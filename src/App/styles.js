@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
@@ -24,7 +24,12 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .active {
-    background-color: #66c9b4;
+    background-color: #f4eade;
+    color: black;
+  }
+
+  a {
+    text-decoration: none;
   }
 
   button, a {
