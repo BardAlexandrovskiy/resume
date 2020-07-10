@@ -1,14 +1,10 @@
-import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 export const MainContainer = styled.div`
-  min-height: calc(100% - 280px);
+  min-height: calc(100% - 100px);
   display: flex;
   justify-content: center;
-
-  @media (max-width: 1024px) {
-    min-height: calc(100% - 240px);
-  }
 `;
 
 export const ContentContainer = styled.div`

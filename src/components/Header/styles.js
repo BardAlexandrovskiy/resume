@@ -1,8 +1,8 @@
-import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 export const HeaderContainer = styled.footer`
-  height: 140px;
+  height: 100px;
   background-color: #2f496e;
   display: flex;
   padding: 0 100px;
@@ -84,7 +84,7 @@ export const LinkPanel = styled.nav`
     top: 77px;
     right: 20px;
     position: absolute;
-    display: ${(props) => (props.burgerOpen ? 'block' : 'none')};
+    display: ${(props) => (props.burgerOpen ? "block" : "none")};
   }
 `;
 

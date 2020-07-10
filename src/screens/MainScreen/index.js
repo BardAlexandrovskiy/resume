@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   MainContainer,
   ContentContainer,
@@ -8,9 +8,9 @@ import {
   Link,
   Avatar,
   Description,
-} from './styles';
-import Footer from '../../components/Footer';
-import avatar from '../../assets/images/avatar.jpg';
+} from "./styles";
+import Footer from "../../components/Footer";
+import avatar from "../../assets/images/avatar.jpg";
 
 const MainScreen = () => {
   return (

@@ -5,15 +5,18 @@ import AboutMeScreen from "../screens/AboutMeScreen";
 import ContactsScreen from "../screens/ContactsScreen";
 import MainScreen from "../screens/MainScreen";
 import ProjectScreen from "../screens/ProjectsScreen";
+import { ScrollContainer } from "./styles";
 
 const Router = () => {
   return (
     <HashRouter>
       <Header />
-      <Route exact path="/" component={() => <MainScreen />} />
-      <Route path="/about-me" component={() => <AboutMeScreen />} />
-      <Route path="/projects" component={() => <ProjectScreen />} />
-      <Route path="/contacts" component={() => <ContactsScreen />} />
+      <ScrollContainer>
+        <Route exact path="/" component={() => <MainScreen />} />
+        <Route path="/about-me" component={() => <AboutMeScreen />} />
+        <Route path="/projects" component={() => <ProjectScreen />} />
+        <Route path="/contacts" component={() => <ContactsScreen />} />
+      </ScrollContainer>
     </HashRouter>
   );
 };

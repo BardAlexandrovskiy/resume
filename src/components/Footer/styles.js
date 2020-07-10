@@ -1,7 +1,7 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
-  height: 140px;
+  height: 100px;
   background-color: #2988bc;
   padding: 0 100px;
   display: flex;
@@ -9,6 +9,7 @@ export const FooterContainer = styled.footer`
 
   @media (max-width: 1024px) {
     padding: 10px 20px;
+    height: 140px;
   }
 `;
 

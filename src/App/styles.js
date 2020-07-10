@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
@@ -34,5 +34,9 @@ export const GlobalStyle = createGlobalStyle`
 
   button, a {
     cursor: pointer;
+  }
+
+  ul {
+    list-style-type: none;
   }
 `;
