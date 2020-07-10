@@ -5,7 +5,10 @@ export const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 100px;
+
+  @media (max-width: 1024px) {
+    min-height: calc(100% - 140px);
+  }
 `;
 
 export const Title = styled.h1`
@@ -15,14 +18,27 @@ export const Title = styled.h1`
   width: inherit;
   color: #242424;
 
-  @media (max-width: 736px) {
+  @media (max-width: 1024px) {
     margin-top: 10px;
+  }
+
+  @media (max-width: 360px) {
+    font-size: 40px;
   }
 `;
 
 export const ContentContainer = styled.div`
   display: flex;
   justify-content: center;
+
+  @media (max-width: 1024px) {
+    padding: 0 20px;
+    flex-direction: column;
+  }
+
+  @media (max-width: 360px) {
+    padding: 0 10px;
+  }
 `;
 
 export const ListStandardResumeItems = styled.ul`
@@ -30,11 +46,28 @@ export const ListStandardResumeItems = styled.ul`
   margin-top: 50px;
   margin-bottom: 50px;
   margin-right: 100px;
+
+  @media (max-width: 1024px) {
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 736px) {
+    width: 100%;
+  }
 `;
 
 export const ListSmallResumeItems = styled.ul`
   margin-top: 50px;
   margin-bottom: 50px;
+
+  @media (max-width: 1024px) {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
 `;
 
 export const TitleItemStandard = styled.h2`
@@ -50,11 +83,23 @@ export const TitleItemStandard = styled.h2`
   color: white;
   font-weight: 500;
   margin-right: 20px;
+
+  @media (max-width: 520px) {
+    width: 90px;
+    height: 90px;
+    margin-right: 10px;
+    font-size: 17px;
+  }
 `;
 
 export const TitleItemSmall = styled.h2`
   padding: 20px 0;
   color: #242424;
+  font-weight: 600;
+
+  @media (max-width: 520px) {
+    font-size: 17px;
+  }
 `;
 
 export const StandardResumeItem = styled.li`
@@ -62,6 +107,10 @@ export const StandardResumeItem = styled.li`
   padding: 30px 0;
   display: flex;
   align-items: center;
+
+  @media (max-width: 736px) {
+    padding: 25px 0;
+  }
 `;
 
 export const SmallResumeItem = styled.li`
@@ -70,17 +119,38 @@ export const SmallResumeItem = styled.li`
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (max-width: 1024px) {
+    margin-bottom: 0;
+  }
 `;
 
 export const Link = styled.a`
   color: #242424;
   font-size: 17px;
+  word-break: break-all;
+
+  @media (max-width: 736px) {
+    width: calc(100% - 140px);
+  }
+
+  @media (max-width: 520px) {
+    width: calc(100% - 100px);
+  }
 `;
 
 export const TextStandard = styled.p`
   color: #242424;
   font-size: 17px;
   width: 460px;
+
+  @media (max-width: 736px) {
+    width: calc(100% - 140px);
+  }
+
+  @media (max-width: 520px) {
+    width: calc(100% - 100px);
+  }
 `;
 
 export const TextSmall = styled.p`

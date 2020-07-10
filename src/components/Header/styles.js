@@ -41,7 +41,7 @@ export const Title = styled.h1`
   }
 
   @media (max-width: 360px) {
-    font-size: 20px;
+    font-size: 23px;
   }
 `;
 
@@ -51,10 +51,6 @@ export const Subtitle = styled.h2`
 
   @media (max-width: 414px) {
     font-size: 20px;
-  }
-
-  @media (max-width: 360px) {
-    font-size: 17px;
   }
 `;
 
@@ -85,6 +81,10 @@ export const LinkPanel = styled.nav`
     right: 20px;
     position: absolute;
     display: ${(props) => (props.burgerOpen ? "block" : "none")};
+  }
+
+  @media (max-width: 360px) {
+    right: 10px;
   }
 `;
 

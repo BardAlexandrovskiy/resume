@@ -5,6 +5,10 @@ export const MainContainer = styled.div`
   min-height: calc(100% - 100px);
   display: flex;
   justify-content: center;
+
+  @media (max-width: 1024px) {
+    min-height: calc(100% - 140px);
+  }
 `;
 
 export const ContentContainer = styled.div`
