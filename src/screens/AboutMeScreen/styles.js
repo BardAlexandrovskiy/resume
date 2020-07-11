@@ -126,7 +126,7 @@ export const SmallResumeItem = styled.li`
 `;
 
 export const Link = styled.a`
-  color: #242424;
+  color: #2f496e;
   font-size: 17px;
   word-break: break-all;
 
