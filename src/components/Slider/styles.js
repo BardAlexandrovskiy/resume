@@ -82,6 +82,7 @@ export const FullContainer = styled.div`
   z-index: 100;
   justify-content: center;
   align-items: center;
+  min-width: 320px;
 `;
 
 export const CloseFullSlideButton = styled.button`
@@ -92,12 +93,13 @@ export const CloseFullSlideButton = styled.button`
   top: 0px;
   right: 0px;
   opacity: 0.6;
-  z-index: 200;
+  z-index: 201;
   top: 25px;
   right: 25px;
 
   @media (max-width: 1400px) {
     width: 50px;
+    height: 50px;
   }
 
   @media (max-width: 736px) {
@@ -133,6 +135,11 @@ export const ArrowRightFull = styled.button`
 
   @media (max-width: 736px) {
     width: 50px;
+    height: 200px;
+  }
+
+  @media (max-width: 736px) {
+    top: calc(50% - 100px);
   }
 `;
 
