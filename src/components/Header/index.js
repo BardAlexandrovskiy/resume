@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 import {
   HeaderContainer,
-  Link,
-  LinkPanel,
+  NavItem,
+  NavPanel,
   TitleContainer,
   Title,
   Subtitle,
   BurgerLinks,
-} from "./styles";
+} from './styles';
 
 class Header extends React.Component {
   constructor(props) {
@@ -27,7 +27,7 @@ class Header extends React.Component {
     const { burgerOpen } = this.state;
     return (
       <HeaderContainer>
-        <TitleContainer>
+        <TitleContainer to="/">
           <Title>Alexandr Bardovskiy</Title>
           <Subtitle>Front End Developer</Subtitle>
         </TitleContainer>
@@ -55,14 +55,14 @@ class Header extends React.Component {
             </svg>
           )}
         </BurgerLinks>
-        <LinkPanel burgerOpen={burgerOpen}>
-          <Link exact to="/">
+        <NavPanel burgerOpen={burgerOpen}>
+          <NavItem exact to="/">
             Main
-          </Link>
-          <Link to="/about-me">About me</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/contacts">Contacts</Link>
-        </LinkPanel>
+          </NavItem>
+          <NavItem to="/about-me">About me</NavItem>
+          <NavItem to="/projects">Projects</NavItem>
+          <NavItem to="/contacts">Contacts</NavItem>
+        </NavPanel>
       </HeaderContainer>
     );
   }

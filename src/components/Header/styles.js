@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { NavLink } from "react-router-dom";
+import styled from 'styled-components';
+import { NavLink, Link } from 'react-router-dom';
 
 export const HeaderContainer = styled.footer`
   height: 100px;
@@ -22,7 +22,7 @@ export const HeaderContainer = styled.footer`
   }
 `;
 
-export const TitleContainer = styled.div`
+export const TitleContainer = styled(Link)`
   @media (max-width: 1024px) {
     margin-bottom: 10px;
   }
@@ -68,7 +68,7 @@ export const BurgerLinks = styled.button`
   }
 `;
 
-export const LinkPanel = styled.nav`
+export const NavPanel = styled.nav`
   width: 50%;
   display: flex;
   z-index: 50;
@@ -80,7 +80,7 @@ export const LinkPanel = styled.nav`
     top: 77px;
     right: 20px;
     position: absolute;
-    display: ${(props) => (props.burgerOpen ? "block" : "none")};
+    display: ${(props) => (props.burgerOpen ? 'block' : 'none')};
   }
 
   @media (max-width: 360px) {
@@ -88,7 +88,7 @@ export const LinkPanel = styled.nav`
   }
 `;
 
-export const Link = styled(NavLink)`
+export const NavItem = styled(NavLink)`
   font-size: 20px;
   border-radius: 10px;
   color: white;
