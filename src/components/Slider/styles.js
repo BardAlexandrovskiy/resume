@@ -121,7 +121,6 @@ export const ArrowRightFull = styled.button`
   z-index: 200;
 
   &:active {
-    transform: scale(1.2);
     opacity: 0.3;
   }
 

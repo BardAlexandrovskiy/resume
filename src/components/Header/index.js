@@ -23,19 +23,11 @@ class Header extends React.Component {
     this.setState({ isOpenMobileNavPanel: !isOpenMobileNavPanel });
   };
 
-  hideMobileNavPanel = () => {
-    const { isOpenMobileNavPanel } = this.state;
-
-    if (isOpenMobileNavPanel) {
-      this.setState({ isOpenMobileNavPanel: false });
-    }
-  };
-
   render() {
     const { isOpenMobileNavPanel } = this.state;
     return (
       <HeaderContainer>
-        <TitleContainer to="/" onClick={() => this.hideMobileNavPanel()}>
+        <TitleContainer to="/">
           <Title>Alexandr Bardovskiy</Title>
           <Subtitle>Front End Developer</Subtitle>
         </TitleContainer>
@@ -63,10 +55,7 @@ class Header extends React.Component {
             </svg>
           )}
         </BurgerLinks>
-        <NavPanel
-          isOpenMobileNavPanel={isOpenMobileNavPanel}
-          onClick={() => this.hideMobileNavPanel()}
-        >
+        <NavPanel isOpenMobileNavPanel={isOpenMobileNavPanel}>
           <NavItem exact to="/">
             Main
           </NavItem>
