@@ -8,7 +8,7 @@ export const MainContainer = styled.div`
   padding: 0 20px;
 
   @media (max-width: 1024px) {
-    min-height: calc(100% - 140px);
+    min-height: calc(100% - 200px);
   }
 
   @media (max-width: 360px) {

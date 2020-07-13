@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   MainContainer,
   Title,
@@ -10,10 +10,10 @@ import {
   ProjectTitle,
   Link,
   Text,
-} from "./styles";
-import Footer from "../../components/Footer";
-import Slider from "../../components/Slider";
-import topGithubUsers from "../../constants/slides";
+} from './styles';
+import Footer from '../../components/Footer';
+import Slider from '../../components/Slider';
+import topGithubUsers from '../../constants/slides';
 
 const ProjectsScreen = () => {
   return (

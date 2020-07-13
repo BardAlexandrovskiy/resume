@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const MainContainer = styled.div`
   min-height: calc(100% - 100px);
@@ -7,7 +7,7 @@ export const MainContainer = styled.div`
   align-items: center;
 
   @media (max-width: 1024px) {
-    min-height: calc(100% - 140px);
+    min-height: calc(100% - 200px);
   }
 `;
 

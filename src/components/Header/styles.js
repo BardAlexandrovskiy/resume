@@ -80,7 +80,7 @@ export const NavPanel = styled.nav`
     top: 77px;
     right: 20px;
     position: absolute;
-    display: ${(props) => (props.burgerOpen ? 'block' : 'none')};
+    display: ${(props) => (props.isOpenMobileNavPanel ? 'block' : 'none')};
   }
 
   @media (max-width: 360px) {

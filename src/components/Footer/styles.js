@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const FooterContainer = styled.footer`
   height: 100px;
@@ -7,9 +7,13 @@ export const FooterContainer = styled.footer`
   display: flex;
   justify-content: center;
 
+  @media (max-width: 1300px) {
+    padding: 0 30px;
+  }
+
   @media (max-width: 1024px) {
     padding: 10px 20px;
-    height: 140px;
+    height: 200px;
   }
 `;
 
@@ -24,11 +28,15 @@ export const ItemsContainer = styled.div`
 
 export const Item = styled.div`
   display: flex;
-  align-items: center;
   margin-right: 70px;
+  align-items: center;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @media (max-width: 1220px) {
+    margin-right: 30px;
   }
 
   @media (max-width: 1024px) {
@@ -44,7 +52,7 @@ export const Item = styled.div`
 export const Img = styled.div`
   width: 40px;
   height: 40px;
-  margin-right: 20px;
+  margin-right: 10px;
 
   @media (max-width: 1024px) {
     width: 30px;
@@ -55,4 +63,20 @@ export const Img = styled.div`
 export const Text = styled.p`
   color: white;
   font-size: 16px;
+`;
+
+export const Link = styled.a`
+  color: white;
+  font-size: 16px;
+`;
+
+export const ImgLink = styled.a`
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+
+  @media (max-width: 1024px) {
+    width: 30px;
+    height: 30px;
+  }
 `;
