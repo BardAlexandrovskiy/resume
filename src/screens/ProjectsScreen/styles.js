@@ -111,6 +111,7 @@ export const ProjectTitle = styled.h2`
   border-top: 1px solid #242424;
   padding-top: 10px;
   margin-bottom: 10px;
+  font-weight: 600;
 
   @media (max-width: 520px) {
     font-size: 17px;

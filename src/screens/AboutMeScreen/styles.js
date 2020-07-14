@@ -83,6 +83,7 @@ export const TitleItemStandard = styled.h2`
   color: white;
   font-weight: 500;
   margin-right: 20px;
+  align-self: flex-start;
 
   @media (max-width: 520px) {
     width: 90px;

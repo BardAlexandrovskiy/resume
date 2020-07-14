@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   MainContainer,
   ContentContainer,
@@ -8,9 +8,9 @@ import {
   Link,
   Avatar,
   Description,
-} from "./styles";
-import Footer from "../../components/Footer";
-import avatar from "../../assets/images/avatar.jpg";
+} from './styles';
+import Footer from '../../components/Footer';
+import avatar from '../../assets/images/avatar.jpg';
 
 const MainScreen = () => {
   return (
@@ -26,10 +26,14 @@ const MainScreen = () => {
             <Avatar src={avatar} />
           </LinksAvatarContainer>
           <Description>
-            I write in JavaScript with React, React Native and Redux. I love
-            beautiful and clear code. Quickly learning new technologies. I will
-            be glad to fulfill your orders. I can make for you landing,
-            progressive web application and mobile application on React Native.
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+            Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
+            aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+            imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
+            mollis pretium. Integer tincidunt.
           </Description>
         </ContentContainer>
       </MainContainer>
