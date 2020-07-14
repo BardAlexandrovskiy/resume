@@ -61,6 +61,7 @@ export const LinkTitle = styled.p`
 export const Link = styled.a`
   font-size: 20px;
   color: #2f496e;
+  word-break: break-all;
 `;
 
 export const ImgLink = styled.a`

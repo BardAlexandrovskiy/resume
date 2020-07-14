@@ -25,7 +25,6 @@ export const Container = styled.div`
   width: inherit;
   height: inherit;
   white-space: nowrap;
-  border-radius: 20px;
   background-color: #242424;
   box-shadow: 0 0 10px #242424;
 `;
