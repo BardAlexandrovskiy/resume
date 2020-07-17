@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   HeaderContainer,
   NavItem,
@@ -7,7 +7,7 @@ import {
   Title,
   Subtitle,
   BurgerLinks,
-} from './styles';
+} from "./styles";
 
 class Header extends React.Component {
   constructor(props) {
@@ -20,7 +20,17 @@ class Header extends React.Component {
   handleClickBurger = () => {
     const { isOpenMobileNavPanel } = this.state;
 
-    this.setState({ isOpenMobileNavPanel: !isOpenMobileNavPanel });
+    if (!isOpenMobileNavPanel) {
+      this.setState({ isOpenMobileNavPanel: true });
+      setTimeout(() =>
+        window.addEventListener("click", this.handleWindowClick)
+      );
+    }
+  };
+
+  handleWindowClick = () => {
+    this.setState({ isOpenMobileNavPanel: false });
+    window.removeEventListener("click", this.handleWindowClick);
   };
 
   render() {
