@@ -1,5 +1,5 @@
-import pic1 from '../assets/images/toDoList/1.png';
-import pic2 from '../assets/images/toDoList/2.png';
+import pic1 from '../assets/images/toDoListSlides/1.png';
+import pic2 from '../assets/images/toDoListSlides/2.png';
 
 const toDoListSlides = [pic1, pic2];
 

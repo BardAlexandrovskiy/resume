@@ -118,15 +118,33 @@ export const ProjectTitle = styled.h2`
   }
 `;
 
+export const TextContainer = styled.div`
+  margin-bottom: 10px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+`;
+
+export const TextTitle = styled.p`
+  display: inline-block;
+  font-size: 17px;
+  color: black;
+  font-weight: 600;
+  white-space: pre-wrap;
+  margin-bottom: 3px;
+`;
+
 export const Link = styled.a`
+  display: inline-block;
   font-size: 17px;
   word-break: break-all;
   display: block;
-  margin-bottom: 10px;
   color: #2f496e;
 `;
 
 export const Text = styled.div`
   color: #242424;
   font-size: 17px;
+  display: inline-block;
 `;
