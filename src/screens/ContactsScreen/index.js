@@ -72,10 +72,7 @@ const ContactsScreen = () => {
             </ContactItem>
           </ContactsContainer>
           <Description>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Open to your suggestions. Write at any time. I will answer shortly.
           </Description>
         </ContentContainer>
       </Container>

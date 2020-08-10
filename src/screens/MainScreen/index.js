@@ -26,14 +26,7 @@ const MainScreen = () => {
             <Avatar src={avatar} />
           </LinksAvatarContainer>
           <Description>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
-            Nulla consequat massa quis enim. Donec pede justo, fringilla vel,
-            aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-            imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-            mollis pretium. Integer tincidunt.
+            My name is Alexander. I am writing in JavaScript (React or React Native + Redux). I can make for you landing, progressive web application and mobile application on React Native. I am learning new technologies quickly. At the moment I am looking for a company in which I could realize myself and be a useful employee. I would be glad to receive your suggestions. I consider working in the office (Poltava) and remote.
           </Description>
         </ContentContainer>
       </MainContainer>

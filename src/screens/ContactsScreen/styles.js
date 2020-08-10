@@ -25,8 +25,8 @@ export const Title = styled.h1`
   color: #242424;
 
   @media (max-width: 736px) {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 40px;
   }
 `;
