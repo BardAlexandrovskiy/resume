@@ -36,13 +36,13 @@ const AboutMeScreen = () => {
             <StandardResumeItem>
               <TitleItemStandard>Education</TitleItemStandard>
               <TextStandard>
-                2018 - A-level Academy front-end developer.
+                2018 - A-Level Academy Front-End Developer.
               </TextStandard>
             </StandardResumeItem>
             <StandardResumeItem>
               <TitleItemStandard>A little bit about me</TitleItemStandard>
               <TextStandard>
-                Programming for me is not only a tool for making money but also my hobby. I want to work and develop in this area. At the moment I want to develop as a React Native Developer and in the future I want to study the Back-End. I want to find a development team where I can be useful. Open to your applications.
+                Programming for me is not only a tool for making money but also my hobby. I want to work and develop in this area. At the moment I want to develop as a React Native Developer and in the future I want to study the Back-End. I want to find a development team where I can be useful. Open to your propositions.
               </TextStandard>
             </StandardResumeItem>
           </ListStandardResumeItems>

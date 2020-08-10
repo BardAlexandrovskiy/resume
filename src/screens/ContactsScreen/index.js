@@ -72,7 +72,7 @@ const ContactsScreen = () => {
             </ContactItem>
           </ContactsContainer>
           <Description>
-            Open to your suggestions. Write at any time. I will answer shortly.
+            Open to your propositions. Write at any time. I'll answer quickly.
           </Description>
         </ContentContainer>
       </Container>

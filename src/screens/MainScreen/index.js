@@ -18,7 +18,7 @@ const MainScreen = () => {
       <MainContainer>
         <ContentContainer>
           <Title>Hello!</Title>
-          <Subtitle>We will be familiar:</Subtitle>
+          <Subtitle>Nice to know you</Subtitle>
           <LinksAvatarContainer>
             <Link to="/about-me">About me</Link>
             <Link to="/projects">Projects</Link>
@@ -26,7 +26,7 @@ const MainScreen = () => {
             <Avatar src={avatar} />
           </LinksAvatarContainer>
           <Description>
-            My name is Alexander. I am writing in JavaScript (React or React Native + Redux). I can make for you landing, progressive web application and mobile application on React Native. I am learning new technologies quickly. At the moment I am looking for a company in which I could realize myself and be a useful employee. I would be glad to receive your suggestions. I consider working in the office (Poltava) and remote.
+            My name is Alexander. I'm writing in JavaScript (React or React Native + Redux). I can make landing for you and also progressive web application or mobile application on React Native. I'm learning new technologies quickly. At the moment I'm looking for job in team where I could be a useful employee. I'll be glad to receive your propositions. I consider working in the office (Poltava) and remote.
           </Description>
         </ContentContainer>
       </MainContainer>
