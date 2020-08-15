@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { NavLink } from 'react-router-dom';
+import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 export const MainContainer = styled.div`
   min-height: calc(100% - 100px);
@@ -11,7 +11,7 @@ export const MainContainer = styled.div`
   }
 `;
 
-export const ContentContainer = styled.div`
+export const FixContainer = styled.div`
   margin-left: 430px;
   display: flex;
   flex-direction: column;
@@ -95,6 +95,7 @@ export const Link = styled(NavLink)`
   border-radius: 50%;
   color: white;
   margin-right: 10px;
+  font-size: 17px;
 
   &:last-of-type {
     margin-right: 0;
@@ -162,5 +163,40 @@ export const Description = styled.p`
 
   @media (max-width: 736px) {
     margin-bottom: 10px;
+  }
+`;
+
+export const BannerTitle = styled.h2`
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  width: inherit;
+  color: #242424;
+  text-align: center;
+
+  @media (max-width: 736px) {
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 520px) {
+    font-size: 35px;
+  }
+`;
+
+export const BannerContainer = styled.div`
+  padding: 0 0 50px;
+  max-width: 900px;
+  margin: 0 auto;
+
+  @media (max-width: 1024px) {
+    padding: 0 20px 50px;
+  }
+
+  @media (max-width: 736px) {
+    padding: 0 20px 10px;
+  }
+
+  @media (max-width: 360px) {
+    padding: 0 10px 10px;
   }
 `;

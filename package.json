@@ -21,23 +21,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "eslintConfig": {
-    "extends": [
-      "airbnb",
-      "react-app",
-      "plugin:prettier/recommended"
-    ],
-    "rules": {
-      "jsx-quotes": [
-        1,
-        "prefer-double"
-      ],
-      "react/jsx-filename-extension": 0
-    },
-    "plugins": [
-      "prettier"
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",
