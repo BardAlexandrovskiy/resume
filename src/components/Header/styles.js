@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { NavLink, Link } from 'react-router-dom';
 
-export const HeaderContainer = styled.footer`
+export const HeaderContainer = styled.header`
   height: 100px;
   background-color: #2f496e;
   display: flex;
