@@ -49,3 +49,9 @@ export const LinkText = styled.a`
   opacity: ${(props) => props.opacity};
   transition: bottom 1s, opacity 0.5s;
 `;
+
+export const ToggleButtonsContainer = styled.div``;
+
+export const ToggleButton = styled.button``;
+
+export const ToggleButtonVisibleBlock = styled.div``;

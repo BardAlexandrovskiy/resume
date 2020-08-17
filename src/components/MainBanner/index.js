@@ -1,5 +1,14 @@
 import React from 'react';
-import { Container, Slide, Pic, Title, LinkText } from './styles';
+import {
+  Container,
+  Slide,
+  Pic,
+  Title,
+  LinkText,
+  ToggleButtonsContainer,
+  ToggleButton,
+  ToggleButtonVisibleBlock,
+} from './styles';
 import mainBannerSlides from '../../constants/mainBannerSlides';
 
 export default class Banner extends React.Component {
@@ -13,9 +22,13 @@ export default class Banner extends React.Component {
   }
 
   componentDidMount = () => {
+    this.toggleSlideAuto();
+  };
+
+  toggleSlideAuto = () => {
     setTimeout(() => this.setState({ infoPosition: -42, opacity: 1 }));
     setTimeout(() => this.setState({ infoPosition: -200, opacity: 0 }), 4500);
-    setInterval(() => {
+    this.intervalId = setInterval(() => {
       const { translateX } = this.state;
       setTimeout(() => this.setState({ infoPosition: -42, opacity: 1 }), 600);
       if (translateX < 200) {
