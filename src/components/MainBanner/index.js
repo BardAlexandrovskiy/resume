@@ -81,18 +81,22 @@ export default class Banner extends React.Component {
           </Slide>
         ))}
         <ToggleButtonsContainer>
-          {[0, 100, 200].map((slidePosition) => (
-            <ToggleButton
-              key={slidePosition}
-              onClick={() => {
-                if (slidePosition !== translateX) {
-                  this.toggleSlideButtonClick(slidePosition);
-                }
-              }}
-            >
-              <ToggleButtonVisibleBlock />
-            </ToggleButton>
-          ))}
+          {[0, 100, 200].map((slidePosition) => {
+            return (
+              <ToggleButton
+                key={slidePosition}
+                onClick={() => {
+                  if (slidePosition !== translateX) {
+                    this.toggleSlideButtonClick(slidePosition);
+                  }
+                }}
+              >
+                <ToggleButtonVisibleBlock
+                  buttonActive={slidePosition === translateX}
+                />
+              </ToggleButton>
+            );
+          })}
         </ToggleButtonsContainer>
       </Container>
     );

@@ -69,6 +69,7 @@ export const ToggleButton = styled.button`
 export const ToggleButtonVisibleBlock = styled.div`
   width: 19px;
   height: 19px;
-  background-color: white;
-  /* transform: scale(2); */
+  background-color: #f4eade;
+  transform: ${(props) => (props.buttonActive ? "scale(2)" : "scale(1)")};
+  transition: transform 0.3s;
 `;
