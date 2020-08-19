@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
   height: 100px;
@@ -75,8 +75,16 @@ export const ImgLink = styled.a`
   height: 40px;
   margin-right: 10px;
 
+  &:last-child {
+    margin-right: 0;
+  }
+
   @media (max-width: 1024px) {
     width: 30px;
     height: 30px;
   }
+`;
+
+export const TextSocialNetworks = styled(Text)`
+  margin-right: 10px;
 `;

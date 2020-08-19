@@ -5,8 +5,8 @@ import { GlobalStyle } from "./styles";
 const App = () => {
   return (
     <>
-      <Router />
       <GlobalStyle />
+      <Router />
     </>
   );
 };

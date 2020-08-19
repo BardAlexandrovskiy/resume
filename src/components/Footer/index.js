@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   FooterContainer,
   Item,
@@ -7,7 +7,8 @@ import {
   Link,
   ItemsContainer,
   ImgLink,
-} from './styles';
+  TextSocialNetworks,
+} from "./styles";
 
 const Footer = () => {
   return (
@@ -55,6 +56,7 @@ const Footer = () => {
           </Link>
         </Item>
         <Item>
+          <TextSocialNetworks>Social networks:</TextSocialNetworks>
           <ImgLink
             href="https://www.facebook.com/people/Alexandr-Bardovskiy/100017107068195"
             target="_blank"
@@ -75,7 +77,6 @@ const Footer = () => {
               <path d="m3.452 0c-4.576 0-4.548 6.929 0 6.929 4.545 0 4.581-6.929 0-6.929zm0 5.429c-2.568 0-2.592-3.929 0-3.929 2.597 0 2.564 3.929 0 3.929z" />
             </svg>
           </ImgLink>
-          <Text>Social networks</Text>
         </Item>
         <Item>
           <Img>
