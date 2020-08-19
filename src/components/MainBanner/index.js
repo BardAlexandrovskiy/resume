@@ -22,6 +22,10 @@ export default class Banner extends React.Component {
   }
 
   componentDidMount = () => {
+    this.timeoutId = setTimeout(
+      () => this.setState({ infoPosition: -42, opacity: 1 }),
+      600
+    );
     this.toggleSlideAuto();
   };
 

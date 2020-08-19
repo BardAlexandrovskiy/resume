@@ -60,6 +60,7 @@ export const ToggleButtonsContainer = styled.div`
 export const ToggleButton = styled.button`
   padding: 10px;
   margin-right: 15px;
+  border-radius: 50%;
 
   &:last-child {
     margin-right: 0;
@@ -72,4 +73,5 @@ export const ToggleButtonVisibleBlock = styled.div`
   background-color: #f4eade;
   transform: ${(props) => (props.buttonActive ? "scale(2)" : "scale(1)")};
   transition: transform 0.3s;
+  border-radius: 50%;
 `;
