@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.ul`
   width: 100%;
@@ -8,6 +8,7 @@ export const Container = styled.ul`
   box-shadow: 0 0 10px #242424;
   padding: 50px 0;
   border-radius: 5px;
+  position: relative;
 `;
 
 export const Slide = styled.li`
@@ -50,8 +51,24 @@ export const LinkText = styled.a`
   transition: bottom 1s, opacity 0.5s;
 `;
 
-export const ToggleButtonsContainer = styled.div``;
+export const ToggleButtonsContainer = styled.div`
+  position: absolute;
+  bottom: 6px;
+  left: 10px;
+`;
 
-export const ToggleButton = styled.button``;
+export const ToggleButton = styled.button`
+  padding: 10px;
+  margin-right: 15px;
 
-export const ToggleButtonVisibleBlock = styled.div``;
+  &:last-child {
+    margin-right: 0;
+  }
+`;
+
+export const ToggleButtonVisibleBlock = styled.div`
+  width: 19px;
+  height: 19px;
+  background-color: white;
+  /* transform: scale(2); */
+`;

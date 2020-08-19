@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Container,
   Slide,
@@ -8,8 +8,8 @@ import {
   ToggleButtonsContainer,
   ToggleButton,
   ToggleButtonVisibleBlock,
-} from './styles';
-import mainBannerSlides from '../../constants/mainBannerSlides';
+} from "./styles";
+import mainBannerSlides from "../../constants/mainBannerSlides";
 
 export default class Banner extends React.Component {
   constructor(props) {
@@ -26,18 +26,38 @@ export default class Banner extends React.Component {
   };
 
   toggleSlideAuto = () => {
-    setTimeout(() => this.setState({ infoPosition: -42, opacity: 1 }));
-    setTimeout(() => this.setState({ infoPosition: -200, opacity: 0 }), 4500);
+    this.timeoutId = setTimeout(
+      () => this.setState({ infoPosition: -200, opacity: 0 }),
+      4500
+    );
     this.intervalId = setInterval(() => {
       const { translateX } = this.state;
-      setTimeout(() => this.setState({ infoPosition: -42, opacity: 1 }), 600);
+      this.timeoutId = setTimeout(
+        () => this.setState({ infoPosition: -42, opacity: 1 }),
+        600
+      );
       if (translateX < 200) {
         this.setState({ translateX: translateX + 100 });
       } else {
         this.setState({ translateX: 0 });
       }
-      setTimeout(() => this.setState({ infoPosition: -200, opacity: 0 }), 4500);
+      this.timeoutId = setTimeout(
+        () => this.setState({ infoPosition: -200, opacity: 0 }),
+        4500
+      );
     }, 5000);
+  };
+
+  toggleSlideButtonClick = (position) => {
+    clearTimeout(this.timeoutId);
+    clearInterval(this.intervalId);
+    this.setState({ infoPosition: -200, opacity: 0, translateX: position });
+    setTimeout(
+      () =>
+        this.setState({ translateX: position, infoPosition: -42, opacity: 1 }),
+      600
+    );
+    this.toggleSlideAuto();
   };
 
   render() {
@@ -60,6 +80,20 @@ export default class Banner extends React.Component {
             </LinkText>
           </Slide>
         ))}
+        <ToggleButtonsContainer>
+          {[0, 100, 200].map((slidePosition) => (
+            <ToggleButton
+              key={slidePosition}
+              onClick={() => {
+                if (slidePosition !== translateX) {
+                  this.toggleSlideButtonClick(slidePosition);
+                }
+              }}
+            >
+              <ToggleButtonVisibleBlock />
+            </ToggleButton>
+          ))}
+        </ToggleButtonsContainer>
       </Container>
     );
   }
