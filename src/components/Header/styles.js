@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { NavLink, Link } from 'react-router-dom';
+import styled from "styled-components";
+import { NavLink, Link } from "react-router-dom";
 
 export const HeaderContainer = styled.header`
   height: 100px;
@@ -11,10 +11,17 @@ export const HeaderContainer = styled.header`
 
   @media (max-width: 1024px) {
     padding: 10px 20px;
-    align-items: center;
     height: 100px;
     justify-content: space-between;
     position: relative;
+  }
+
+  @media (max-width: 736px) {
+    height: 87px;
+  }
+
+  @media (max-width: 414px) {
+    height: 74px;
   }
 
   @media (max-width: 360px) {
@@ -24,7 +31,7 @@ export const HeaderContainer = styled.header`
 
 export const TitleContainer = styled(Link)`
   @media (max-width: 1024px) {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
   }
 `;
 
@@ -80,7 +87,7 @@ export const NavPanel = styled.nav`
     top: 77px;
     right: 20px;
     position: absolute;
-    display: ${(props) => (props.isOpenMobileNavPanel ? 'block' : 'none')};
+    display: ${(props) => (props.isOpenMobileNavPanel ? "block" : "none")};
   }
 
   @media (max-width: 360px) {
