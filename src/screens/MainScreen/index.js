@@ -29,9 +29,9 @@ const MainScreen = () => {
             <Avatar src={avatar} />
           </LinksAvatarContainer>
           <Description>
-            My name is Alexander. I'm writing in JavaScript (React or React
+            My name is Alexander. My main stack is JavaScript (React or React
             Native + Redux). I can make landing for you and also progressive web
-            application or mobile application on React Native. I'm learning new
+            application or mobile application on React Native. I learn new
             technologies quickly. At the moment I'm looking for job in team
             where I could be a useful employee. I'll be glad to receive your
             propositions. I consider working in the office (Poltava) and remote.
