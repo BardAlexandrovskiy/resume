@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   MainContainer,
   FixContainer,
@@ -10,10 +10,10 @@ import {
   Description,
   BannerContainer,
   BannerTitle,
-} from "./styles";
-import Footer from "../../components/Footer";
-import avatar from "../../assets/images/avatar.jpg";
-import MainBanner from "../../components/MainBanner";
+} from './styles';
+import Footer from '../../components/Footer';
+import avatar from '../../assets/images/avatar.jpg';
+import MainBanner from '../../components/MainBanner';
 
 const MainScreen = () => {
   return (
@@ -37,11 +37,12 @@ const MainScreen = () => {
             propositions. I consider working in the office (Poltava) and remote.
           </Description>
         </FixContainer>
+        <BannerContainer>
+          <BannerTitle>Some projects:</BannerTitle>
+          <MainBanner />
+        </BannerContainer>
       </MainContainer>
-      <BannerContainer>
-        <BannerTitle>Some projects:</BannerTitle>
-        <MainBanner />
-      </BannerContainer>
+
       <Footer />
     </>
   );

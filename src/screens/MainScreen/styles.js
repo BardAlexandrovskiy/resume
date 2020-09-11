@@ -1,10 +1,12 @@
-import styled from "styled-components";
-import { NavLink } from "react-router-dom";
+import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 export const MainContainer = styled.div`
   min-height: calc(100% - 100px);
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
 
   @media (max-width: 1024px) {
     min-height: calc(100% - 200px);
@@ -186,7 +188,6 @@ export const BannerTitle = styled.h2`
 export const BannerContainer = styled.div`
   padding: 0 0 50px;
   max-width: 900px;
-  margin: 0 auto;
 
   @media (max-width: 1024px) {
     padding: 0 20px 50px;
